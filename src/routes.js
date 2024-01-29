@@ -27,6 +27,7 @@ import React from 'react';
 import MainLayout from './Components/MainLayout';
 import LandingPage from './Components/LandingPage';
 import Services from './Components/Services';
+import AboutUs from './Components/AboutUs';
 
 const routes= [
   {
@@ -35,6 +36,7 @@ const routes= [
     children: [
       { path: '', element: <LandingPage /> },
       { path: 'news', element: <Services/> },
+      { path: 'about', element: <AboutUs/> },
       // { path: "/", element: <Navigate to="/home" /> },
     ],
   },

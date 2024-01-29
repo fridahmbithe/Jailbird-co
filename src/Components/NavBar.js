@@ -79,13 +79,13 @@ const NavBar = () => {
       <NavItem><Link to="">Home</Link></NavItem>
       <NavItem><Link to="/news">Services</Link></NavItem>
       <NavItem><Link to="/">Reviews</Link></NavItem>
-      <NavItem><Link to="/">About</Link></NavItem>
+      <NavItem><Link to="/about">About</Link></NavItem>
     </DesktopNav>
     <MobileNav style={{ display: isMobileNavOpen ? 'flex' : 'none' }}>
-     <NavItem><Link to="/">Home</Link></NavItem>
-      <NavItem><Link to="/">Services</Link></NavItem>
+     <NavItem><Link to="">Home</Link></NavItem>
+      <NavItem><Link to="/news">Services</Link></NavItem>
       <NavItem><Link to="/">Reviews</Link></NavItem>
-      <NavItem><Link to="/">About</Link></NavItem>
+      <NavItem><Link to="/about">About</Link></NavItem>
     </MobileNav>
   </Nav>
   );
