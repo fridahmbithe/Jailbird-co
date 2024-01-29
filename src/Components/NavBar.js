@@ -76,8 +76,8 @@ const NavBar = () => {
       {isMobileNavOpen ? 'Close' : 'Menu'}
     </MobileNavToggle>
     <DesktopNav>
-      <NavItem><Link to="news">Home</Link></NavItem>
-      <NavItem><Link to="/">Services</Link></NavItem>
+      <NavItem><Link to="">Home</Link></NavItem>
+      <NavItem><Link to="/news">Services</Link></NavItem>
       <NavItem><Link to="/">Reviews</Link></NavItem>
       <NavItem><Link to="/">About</Link></NavItem>
     </DesktopNav>
