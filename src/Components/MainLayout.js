@@ -1,10 +1,6 @@
 import React from 'react';
-import { Outlet } from 'react-router'; // Import Outlet from react-router
-
-// Import styled-components for styling
+import { Outlet } from 'react-router'; 
 import styled from 'styled-components';
-
-// Import Navbar component
 import Navbar from './NavBar';
 
 // Define styled components for layout
@@ -27,7 +23,7 @@ const MainLayoutContainer = styled('div')({
 const MainLayoutContent = styled('div')({
   flex: 'auto',
   height: '100%',
-  overflow: 'auto',
+  overflow: 'hidden',
 });
 
 // Define MainLayout component
