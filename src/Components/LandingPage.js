@@ -13,7 +13,7 @@ const LandingPage = () => {
   return (
     <>
       {/* <NavBar /> */}
-      <div className='bg-orange-200 sm:h-screen'>
+      <div className='bg-orange-50 sm:h-screen'>
 
           <div className="lg:w-screen  flex justify-center h-2/3">
             <div className="w-screen flex">
