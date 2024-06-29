@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-
+import logo from "../Assets/logo.png"
 
 const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #D9D9D9;
+  background: linear-gradient(to right, #5CA5A5, #63BABA);
   color: red;
   padding: 1rem;
 `;
@@ -70,21 +70,24 @@ const NavBar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = React.useState(false);
 
   return (
-    <Nav>
-    <Logo >JAILBIRD</Logo>
+    <Nav className='bg-desaturated-dark-cyan w-full'
+    >
+    <Logo>
+    <img src={logo} alt="Company Logo" />
+    </Logo>
     <MobileNavToggle onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
       {isMobileNavOpen ? 'Close' : 'Menu'}
     </MobileNavToggle>
     <DesktopNav>
       <NavItem><Link to="">Home</Link></NavItem>
       <NavItem><Link to="/news">Services</Link></NavItem>
-      <NavItem><Link to="/">Reviews</Link></NavItem>
+      <NavItem><Link to="/jobs">Jobs</Link></NavItem>
       <NavItem><Link to="/about">About</Link></NavItem>
     </DesktopNav>
     <MobileNav style={{ display: isMobileNavOpen ? 'flex' : 'none' }}>
      <NavItem><Link to="">Home</Link></NavItem>
       <NavItem><Link to="/news">Services</Link></NavItem>
-      <NavItem><Link to="/">Reviews</Link></NavItem>
+      <NavItem><Link to="/jobs">Jobs</Link></NavItem>
       <NavItem><Link to="/about">About</Link></NavItem>
     </MobileNav>
   </Nav>

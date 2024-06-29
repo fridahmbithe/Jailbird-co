@@ -28,6 +28,7 @@ import MainLayout from './Components/MainLayout';
 import LandingPage from './Components/LandingPage';
 import Services from './Components/Services';
 import AboutUs from './Components/AboutUs';
+import Jobs from './Components/Jobs';
 
 const routes= [
   {
@@ -37,6 +38,7 @@ const routes= [
       { path: '', element: <LandingPage /> },
       { path: 'news', element: <Services/> },
       { path: 'about', element: <AboutUs/> },
+      { path: 'jobs', element: <Jobs/> },
       // { path: "/", element: <Navigate to="/home" /> },
     ],
   },
