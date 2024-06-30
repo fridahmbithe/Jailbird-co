@@ -26,9 +26,9 @@ const NavItem = styled.li`
     }
   }
 `;
-const Logo = styled.h1`
-  font-size: 1.5rem;
-  margin: 0;
+const Logo = styled.img`
+max-height: 60px;
+width: auto;
 `;
   const MobileNavToggle = styled.button`
   display: block;
@@ -66,15 +66,14 @@ const MobileNav = styled.ul`
     display: flex;
   }
 `;
+
 const NavBar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = React.useState(false);
 
   return (
-    <Nav className='bg-desaturated-dark-cyan w-full'
-    >
-    <Logo>
-    <img src={logo} alt="Company Logo" />
-    </Logo>
+    <Nav >
+     <Logo src={logo} alt="Company Logo" />
+
     <MobileNavToggle onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
       {isMobileNavOpen ? 'Close' : 'Menu'}
     </MobileNavToggle>
