@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 export class AboutUs extends Component {
     render() {
         return (
-            <div className='bg-orange-200 h-screen w-screen'>
-                <div className='text-center text-black text-3xl font-bold'>About Jailbird</div>
+            <div className=' h-screen w-screen' style={{backgroundColor:'#F4FEFE'}}>
+                <div className='text-center text-black text-3xl font-bold'>About ResumeRise Limited</div>
                 <div className='m-3 justify-start'>
                     <p>Jailbird is a leading Job advertising, CV creation and leadership Training company that specializes in
                         helping individuals reach their career goals by providing top-notch CV writing and

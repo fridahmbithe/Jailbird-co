@@ -36,7 +36,7 @@ const routes= [
     element: <MainLayout />,
     children: [
       { path: '', element: <LandingPage /> },
-      { path: 'news', element: <Services/> },
+      { path: 'services', element: <Services/> },
       { path: 'about', element: <AboutUs/> },
       { path: 'jobs', element: <Jobs/> },
       // { path: "/", element: <Navigate to="/home" /> },

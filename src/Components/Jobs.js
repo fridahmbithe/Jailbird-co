@@ -39,7 +39,8 @@ const JobDetails = styled.div`
 
 const CompanyName = styled.h3`
   margin-bottom: 0.5rem;
-  color: #AABF3B;
+  color: #FE9900;
+  font-weight: 600;
 `;
 
 const JobDescription = styled.p`

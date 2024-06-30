@@ -93,15 +93,22 @@ const NavBar = () => {
             Home
           </Link>
       </NavItem>
-      <NavItem><Link to="/news">Services</Link></NavItem>
-      <NavItem><Link to="/jobs">Jobs</Link></NavItem>
-      <NavItem><Link to="/about">About</Link></NavItem>
+      <NavItem><Link to="/services" className={activeLink === "/services" ? "active" : ""} onClick={() => handleLinkClick("/services")}>
+      Services</Link></NavItem>
+      <NavItem><Link to="/jobs" className={activeLink === "/jobs" ? "active" : ""} onClick={() => handleLinkClick("/jobs")}>
+      Jobs</Link></NavItem>
+      <NavItem><Link to="/about" className={activeLink === "/about" ? "active" : ""} onClick={() => handleLinkClick("/about")}>
+      About</Link></NavItem>
     </DesktopNav>
     <MobileNav style={{ display: isMobileNavOpen ? 'flex' : 'none' }}>
-     <NavItem><Link to="">Home</Link></NavItem>
-      <NavItem><Link to="/news">Services</Link></NavItem>
-      <NavItem><Link to="/jobs">Jobs</Link></NavItem>
-      <NavItem><Link to="/about">About</Link></NavItem>
+     <NavItem><Link to="/" className={activeLink === "/" ? "active" : ""} onClick={() => handleLinkClick("/")}>
+     Home</Link></NavItem>
+      <NavItem><Link to="/services" className={activeLink === "/" ? "active" : ""} onClick={() => handleLinkClick("/services")}>
+      Services</Link></NavItem>
+      <NavItem><Link to="/jobs" className={activeLink === "/" ? "active" : ""} onClick={() => handleLinkClick("/jobs")}>
+      Jobs</Link></NavItem>
+      <NavItem><Link to="/about" className={activeLink === "/" ? "active" : ""} onClick={() => handleLinkClick("/about")}>
+      About</Link></NavItem>
     </MobileNav>
   </Nav>
   );

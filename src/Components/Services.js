@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export class Services extends Component {
   render() {
     return (
-      <div className='bg-orange-200 h-screen w-screen'>
+      <div className=' h-screen w-screen' style={{backgroundColor:"#F4FEFE"}}>
         <div className='text-black font-bold text-2xl text-center'>
           Explore Our Services
         </div>
