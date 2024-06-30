@@ -24,6 +24,12 @@ const NavItem = styled.li`
     &:hover {
       color: #bada55;
     }
+     &.active {
+      color: #bada55;
+}
+    //   &:not(.active):hover {
+    //   color: #000;
+    // }
   }
 `;
 const Logo = styled.img`
@@ -69,7 +75,11 @@ const MobileNav = styled.ul`
 
 const NavBar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = React.useState(false);
+  const [activeLink, setActiveLink] = React.useState("/");
 
+  const handleLinkClick = (path) => {
+    setActiveLink(path);
+  };
   return (
     <Nav >
      <Logo src={logo} alt="Company Logo" />
@@ -78,7 +88,11 @@ const NavBar = () => {
       {isMobileNavOpen ? 'Close' : 'Menu'}
     </MobileNavToggle>
     <DesktopNav>
-      <NavItem><Link to="">Home</Link></NavItem>
+      <NavItem>
+      <Link to="/" className={activeLink === "/" ? "active" : ""} onClick={() => handleLinkClick("/")}>
+            Home
+          </Link>
+      </NavItem>
       <NavItem><Link to="/news">Services</Link></NavItem>
       <NavItem><Link to="/jobs">Jobs</Link></NavItem>
       <NavItem><Link to="/about">About</Link></NavItem>
