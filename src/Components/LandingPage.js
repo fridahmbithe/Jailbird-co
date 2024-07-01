@@ -12,7 +12,7 @@ const LandingPage = () => {
 
   return (
     <>
-      <div className=" sm:h-screen overflow-hidden">
+      <div className=" sm:h-auto overflow-hidden ">
         <div className="lg:w-screen flex justify-center h-2/3">
           <div className="w-screen flex">
             <div className="w-2/3 m-4 items-start">
@@ -51,16 +51,14 @@ const LandingPage = () => {
               <h2 className="text-base text-orange-500 font-semibold tracking-wide uppercase">
                 Testimonials
               </h2>
-              <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              <p className="my-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                 Hear from Our Satisfied Customers
               </p>
             </div>
-            <div className="mb-10">
+            <div className="mb-auto">
               <blockquote className="bg-gray-100 p-6 rounded-lg">
-                <p className="text-lg font-medium text-gray-900">
-                  "ResumeRise helped me transform my resume and prepare for interviews. I landed my dream job within a month!"
-                </p>
-                {/* <footer className="mt-4">
+                
+                <div className="">
                   <div className="flex items-center">
                     <img
                       src="https://via.placeholder.com/40"
@@ -74,9 +72,14 @@ const LandingPage = () => {
                       <div className="text-base font-medium text-gray-500">
                         Software Engineer
                       </div>
+                      <div>
+                      <p className="text-lg font-medium text-gray-900">
+                  "ResumeRise helped me transform my resume and prepare for interviews. I landed my dream job within a month!"
+                </p>
+                      </div>
                     </div>
                   </div>
-                </footer> */}
+                </div>
               </blockquote>
             </div>
           </div>
