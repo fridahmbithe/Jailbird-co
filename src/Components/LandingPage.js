@@ -18,9 +18,10 @@ const LandingPage = () => {
           <div className="lg:w-screen  flex justify-center h-2/3">
             <div className="w-screen flex">
               <div className="w-2/3  m-4 items-start">
-                <h2 className="lg:text-3xl p-2 w-full font-bold tracking-tight text-black sm:text-xl gradient-text ">
-                  Get that ideal job by ensuring you have a great CV and cover letter and more.
-                </h2>
+              <h2 className='lg:text-3xl p-2 w-full font-bold tracking-tight text-black sm:text-xl gradient-text '>Ready to soar? Explore exciting job opportunities, 
+                    <br />
+                    revamp your CV, and prepare for interviews. Let’s unlock your potential together!</h2>
+                
                 <p className='lg:text-xl w-full font-normal p-2'>
                   Landing a job is all about how you present yourself.
                   At <i className='text-orange-500'>Jailbird</i> we help you tailor your cover letter and CV from a professional perspective.

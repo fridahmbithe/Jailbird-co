@@ -6,6 +6,7 @@ import styled from 'styled-components';
 
 // Import Navbar component
 import Navbar from './NavBar';
+import Footer from './Footer';
 
 // Define styled components for layout
 const MainLayoutRoot = styled('div')(({ theme }) => ({
@@ -43,6 +44,7 @@ const MainLayout = () => (
         </MainLayoutContent>
       </MainLayoutContainer>
     </MainLayoutWrapper>
+    <Footer/>
   </MainLayoutRoot>
 );
 

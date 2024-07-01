@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import logo from "../Assets/logo.png"
+import logo from "../Assets/Logo (2).png"
 
 const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to right, #5CA5A5, #63BABA);
+  // background-image: url(/bgimg.jpg);
   color: red;
   padding: 1rem;
 `;
@@ -27,14 +28,11 @@ const NavItem = styled.li`
      &.active {
       color: #bada55;
 }
-    //   &:not(.active):hover {
-    //   color: #000;
-    // }
   }
 `;
 const Logo = styled.img`
-max-height: 60px;
-width: auto;
+max-height: 100px;
+width: 150px;
 `;
   const MobileNavToggle = styled.button`
   display: block;
