@@ -5,60 +5,60 @@ export class AboutUs extends Component {
     return (
       <div className="bg-gray-100 py-12">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Welcome to ResumeRise: Unlocking Your Career Potential
-            </h2>
-            <p className="text-lg text-gray-600 mb-8">
-              We are a dedicated team of career experts committed to helping you achieve your professional goals.
-            </p>
-          </div>
+        <div className="text-center">
+  <h2 className="text-3xl font-bold text-gray-900 mb-4">
+    Welcome to ResumeRise: Unlocking Your Career Potential
+  </h2>
+  <p className="text-lg text-gray-600 mb-8">
+    We are a dedicated team of career experts committed to helping you achieve your professional goals.
+  </p>
+</div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Hardworking Creativity
-                </h3>
-                <p className="text-gray-600">
-                  Our team combines passion with innovation to solve your business challenges. We're not afraid to roll up our sleeves and think outside the box.
-                </p>
-              </div>
-            </div>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div className="flex">
+    <div className="bg-white rounded-lg shadow-lg p-6 flex-1">
+      <h3 className="text-xl font-bold text-gray-900 mb-4">
+        Hardworking Creativity
+      </h3>
+      <p className="text-gray-600">
+        Our team combines passion with innovation to solve your business challenges. We're not afraid to roll up our sleeves and think outside the box.
+      </p>
+    </div>
+  </div>
 
-            <div>
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Crafting Unique CVs
-                </h3>
-                <p className="text-gray-600">
-                  A well-written CV isn't just a document; it's your personal story. Our experienced writers tailor each CV to showcase your skills, experiences, and qualifications, ensuring you stand out in a competitive job market.
-                </p>
-              </div>
-            </div>
+  <div className="flex">
+    <div className="bg-white rounded-lg shadow-lg p-6 flex-1">
+      <h3 className="text-xl font-bold text-gray-900 mb-4">
+        Crafting Unique CVs
+      </h3>
+      <p className="text-gray-600">
+        A well-written CV isn't just a document; it's your personal story. Our experienced writers tailor each CV to showcase your skills, experiences, and qualifications, ensuring you stand out in a competitive job market.
+      </p>
+    </div>
+  </div>
 
-            <div>
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Career Development
-                </h3>
-                <p className="text-gray-600">
-                  Beyond CVs, we're your career partners. Whether you're a fresh graduate or a seasoned professional, we provide personalized career development services to help you reach your goals.
-                </p>
-              </div>
-            </div>
+  <div className="flex">
+    <div className="bg-white rounded-lg shadow-lg p-6 flex-1">
+      <h3 className="text-xl font-bold text-gray-900 mb-4">
+        Career Development
+      </h3>
+      <p className="text-gray-600">
+        Beyond CVs, we're your career partners. Whether you're a fresh graduate or a seasoned professional, we provide personalized career development services to help you reach your goals.
+      </p>
+    </div>
+  </div>
 
-            <div>
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Leadership Training
-                </h3>
-                <p className="text-gray-600">
-                  Elevate your leadership game with our Essential Leadership Instruction. Our curriculum, developed by subject matter experts, equips you with the skills to succeed.
-                </p>
-              </div>
-            </div>
-          </div>
+  <div className="flex">
+    <div className="bg-white rounded-lg shadow-lg p-6 flex-1">
+      <h3 className="text-xl font-bold text-gray-900 mb-4">
+        Leadership Training
+      </h3>
+      <p className="text-gray-600">
+        Elevate your leadership game with our Essential Leadership Instruction. Our curriculum, developed by subject matter experts, equips you with the skills to succeed.
+      </p>
+    </div>
+  </div>
+</div>
 
           <div className="mt-8 text-center">
             <a
