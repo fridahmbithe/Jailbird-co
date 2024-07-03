@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom';
 import logo from "../Assets/logo.png"
 
 const Nav = styled.nav`
@@ -34,7 +34,8 @@ const Logo = styled.img`
 max-height: 100px;
 width: 250px;
 `;
-  const MobileNavToggle = styled.button`
+// Mobile Nav Toggle button
+const MobileNavToggle = styled.button`
   display: block;
   background-color: transparent;
   border: none;
@@ -51,6 +52,35 @@ width: 250px;
   }
 `;
 
+// Floating mobile nav card
+const MobileNav = styled.div`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  width: 90%;
+  max-width: 400px;
+  z-index: 100;
+  opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
+  visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
+  transition: all 0.3s ease;
+`;
+
+const CloseButton = styled.button`
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+`;
 const DesktopNav = styled.ul`
   display: flex;
   flex-direction: row;
@@ -60,16 +90,6 @@ const DesktopNav = styled.ul`
   }
 `;
 
-const MobileNav = styled.ul`
-  display: none;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-
-  @media (max-width: 767px) {
-    display: flex;
-  }
-`;
 
 const NavBar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = React.useState(false);
@@ -77,13 +97,17 @@ const NavBar = () => {
 
   const handleLinkClick = (path) => {
     setActiveLink(path);
-  };
+    // Close the mobile navigation card when a link is clicked
+    setIsMobileNavOpen(false);
+  }
   return (
     <Nav >
      <Logo src={logo} alt="Company Logo" />
 
-    <MobileNavToggle onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
-      {isMobileNavOpen ? 'Close' : 'Menu'}
+    <MobileNavToggle onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
+        style={{ color: 'black' }}
+>
+      {isMobileNavOpen ? 'X' : 'Menu'}
     </MobileNavToggle>
     <DesktopNav>
       <NavItem>
@@ -98,7 +122,7 @@ const NavBar = () => {
       <NavItem><Link to="/about" className={activeLink === "/about" ? "active" : ""} onClick={() => handleLinkClick("/about")}>
       About</Link></NavItem>
     </DesktopNav>
-    <MobileNav style={{ display: isMobileNavOpen ? 'flex' : 'none' }}>
+    <MobileNav isOpen={isMobileNavOpen}>
      <NavItem><Link to="/" className={activeLink === "/" ? "active" : ""} onClick={() => handleLinkClick("/")}>
      Home</Link></NavItem>
       <NavItem><Link to="/services" className={activeLink === "/" ? "active" : ""} onClick={() => handleLinkClick("/services")}>
@@ -107,7 +131,11 @@ const NavBar = () => {
       Jobs</Link></NavItem>
       <NavItem><Link to="/about" className={activeLink === "/" ? "active" : ""} onClick={() => handleLinkClick("/about")}>
       About</Link></NavItem>
+      <CloseButton onClick={() => setIsMobileNavOpen(false)}>
+        <i className="fas fa-times"></i>
+      </CloseButton>
     </MobileNav>
+
   </Nav>
   );
 };
