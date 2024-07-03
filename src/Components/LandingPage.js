@@ -17,7 +17,7 @@ const LandingPage = () => {
           <div className="w-screen flex">
             <div className="w-2/3 m-4 items-start">
               <h1 className="lg:text-4xl p-2 w-full font-bold tracking-tight text-black sm:text-2xl gradient-text">
-                Unlock Your Career Potential with ResumeRise
+                Unlock Your Career Potential with ResumeRise Limited
               </h1>
               <p className="lg:text-xl w-full font-normal p-2">
                 Craft a Winning Resume, Ace Interviews, and Secure Your Dream Job
@@ -45,6 +45,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+        
         <div className="bg-white py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="lg:text-center">

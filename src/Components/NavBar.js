@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import logo from "../Assets/Logo (2).png"
+import logo from "../Assets/logo.png"
 
 const Nav = styled.nav`
   display: flex;
@@ -32,7 +32,7 @@ const NavItem = styled.li`
 `;
 const Logo = styled.img`
 max-height: 100px;
-width: 150px;
+width: 250px;
 `;
   const MobileNavToggle = styled.button`
   display: block;
