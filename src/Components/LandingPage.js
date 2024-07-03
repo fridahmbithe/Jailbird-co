@@ -1,48 +1,43 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import heroImage from "../Assets/teachersmiling.png";
-import { useState } from 'react';
+import heroImage from "../Assets/getthatjob.jpeg";
 
 const LandingPage = () => {
   const navigate = useNavigate('');
 
-  const handleClick = () => {
-    navigate('/services');
-  };
-
   return (
     <>
-      <div className=" sm:h-auto overflow-hidden ">
-        <div className="lg:w-screen flex justify-center h-2/3">
-          <div className="w-screen flex">
-            <div className="w-2/3 m-4 items-start">
-              <h1 className="lg:text-4xl p-2 w-full font-bold tracking-tight text-black sm:text-2xl gradient-text">
-                Unlock Your Career Potential with ResumeRise Limited
-              </h1>
-              <p className="lg:text-xl w-full font-normal p-2">
-                Craft a Winning Resume, Ace Interviews, and Secure Your Dream Job
-              </p>
-              <ul className="list-disc pl-6 lg:text-lg font-medium">
-                <li>Professional Resume and Cover Letter Assistance</li>
-                <li>Expert Interview Preparation and Coaching</li>
-                <li>Personalized LinkedIn Profile Optimization</li>
-                <li>Tailored Mentorship for Career Advancement</li>
-              </ul>
-              <div className="relative mt-6 pl-0 w-1/2 bg-orange-500 p-4 rounded text-white font-semibold text-center hover:bg-orange-600 cursor-pointer">
-                <Link to="/services" className="block">
-                  Explore Our Services
-                </Link>
-              </div>
+      <div className="overflow-hidden">
+        <div className="flex flex-col lg:flex-row justify-center h-auto lg:h-2/3">
+          <div className="lg:w-2/3 p-4 items-start">
+            <h1 className="text-4xl p-2 font-bold tracking-tight text-black gradient-text">
+              Unlock Your Career Potential with ResumeRise Limited
+            </h1>
+            <p className="text-xl p-2 font-normal">
+              Craft a Winning Resume, Ace Interviews, and Secure Your Dream Job
+            </p>
+            <ul className="list-disc pl-6 text-lg font-medium">
+              <li>Professional Resume and Cover Letter Assistance</li>
+              <li>Expert Interview Preparation and Coaching</li>
+              <li>Personalized LinkedIn Profile Optimization</li>
+              <li>Tailored Mentorship for Career Advancement</li>
+            </ul>
+            <div className="relative mt-6 pl-0 w-1/2 bg-orange-500 p-4 rounded text-white font-semibold text-center hover:bg-orange-600 cursor-pointer">
+              <Link to="/services" className="block">
+                Explore Our Services
+              </Link>
             </div>
-            <div className="w-1/3 mt-10 m-4 items-end justify-center p-2">
-              <div
-                style={{
-                  backgroundImage: `url(${heroImage})`,
-                  backgroundSize: 'cover',
-                  height: '100%',
-                }}
-              ></div>
-            </div>
+          </div>
+          <div className="lg:w-1/3 mt-10 p-4 items-end justify-center">
+            <div
+              style={{
+                backgroundImage: `url(${heroImage})`,
+                backgroundSize: 'cover',
+                height: '100%',
+                borderRadius: '10%',
+                border: 'fit',
+              }}
+            ></div>
           </div>
         </div>
         
@@ -58,7 +53,6 @@ const LandingPage = () => {
             </div>
             <div className="mb-auto">
               <blockquote className="bg-gray-100 p-6 rounded-lg">
-                
                 <div className="">
                   <div className="flex items-center">
                     <img
@@ -74,9 +68,9 @@ const LandingPage = () => {
                         Software Engineer
                       </div>
                       <div>
-                      <p className="text-lg font-medium text-gray-900">
-                  "ResumeRise helped me transform my resume and prepare for interviews. I landed my dream job within a month!"
-                </p>
+                        <p className="text-lg font-medium text-gray-900">
+                          "ResumeRise helped me transform my resume and prepare for interviews. I landed my dream job within a month!"
+                        </p>
                       </div>
                     </div>
                   </div>
