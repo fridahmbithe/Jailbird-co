@@ -28,8 +28,8 @@ const LandingPage = () => {
               </Link>
             </div>
           </div>
-          <div className="lg:w-1/3 mt-10 p-4 items-end justify-center">
-            <div
+          <div className="w-full sm:w-1/2 md:w-1/3 mt-10 p-4 items-end justify-center">
+          <div
               style={{
                 backgroundImage: `url(${heroImage})`,
                 backgroundSize: 'cover',

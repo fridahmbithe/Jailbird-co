@@ -16,6 +16,7 @@ const Nav = styled.nav`
 const NavItem = styled.li`
   list-style: none;
   margin: 0 1rem;
+  font-size: 1.5rem;
 
   a {
     color: #000;
