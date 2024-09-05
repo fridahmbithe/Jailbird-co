@@ -23,7 +23,7 @@ const ServiceCard = styled.div`
   height: 180px; 
   padding: 8px;
   width: 100%; 
-  max-width: 400px; // Set a maximum width for the card
+  max-width: 600px; // Set a maximum width for the card
 
   @media (min-width: 768px) {
     height: 200px; // medium and larger screens

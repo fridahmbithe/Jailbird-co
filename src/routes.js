@@ -29,6 +29,7 @@ import LandingPage from './Components/LandingPage';
 import Services from './Components/Services';
 import AboutUs from './Components/AboutUs';
 import Jobs from './Components/Jobs';
+import ContactUs  from './Components/ContactUs';
 
 const routes= [
   {
@@ -39,6 +40,7 @@ const routes= [
       { path: 'services', element: <Services/> },
       { path: 'about', element: <AboutUs/> },
       { path: 'jobs', element: <Jobs/> },
+      { path: 'contact', element: <ContactUs />},
       // { path: "/", element: <Navigate to="/home" /> },
     ],
   },

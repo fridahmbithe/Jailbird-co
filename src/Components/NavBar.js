@@ -33,7 +33,7 @@ const NavItem = styled.li`
 `;
 const Logo = styled.img`
 max-height: 100px;
-width: 250px;
+width: 100px;
 `;
 // Mobile Nav Toggle button
 const MobileNavToggle = styled.button`
@@ -70,7 +70,6 @@ const MobileNav = styled.div`
   visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
   transition: all 0.3s ease;
 `;
-
 const CloseButton = styled.button`
   position: absolute;
   top: 12px;
@@ -90,7 +89,6 @@ const DesktopNav = styled.ul`
     display: none;
   }
 `;
-
 
 const NavBar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = React.useState(false);
