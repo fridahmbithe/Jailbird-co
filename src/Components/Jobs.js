@@ -120,7 +120,7 @@ const Jobs = () => {
   };
 
   useEffect(() => {
-    axios.get('http://localhost:1443/api/jobs')
+    axios.get('http://localhost:3300/api/jobs')
       .then((response) => {
         const jobs = response.data.map(jobData => ({
           id: jobData.Id,

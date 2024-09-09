@@ -66,8 +66,8 @@ const MobileNav = styled.div`
   width: 90%;
   max-width: 400px;
   z-index: 100;
-  opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
-  visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
+  opacity: ${({ isopen }) => (isopen ? 1 : 0)};
+  visibility: ${({ isopen }) => (isopen ? 'visible' : 'hidden')};
   transition: all 0.3s ease;
 `;
 const CloseButton = styled.button`
@@ -121,7 +121,7 @@ const NavBar = () => {
       <NavItem><Link to="/about" className={activeLink === "/about" ? "active" : ""} onClick={() => handleLinkClick("/about")}>
       About</Link></NavItem>
     </DesktopNav>
-    <MobileNav isOpen={isMobileNavOpen}>
+    <MobileNav isopen={isMobileNavOpen}>
      <NavItem><Link to="/" className={activeLink === "/" ? "active" : ""} onClick={() => handleLinkClick("/")}>
      Home</Link></NavItem>
       <NavItem><Link to="/services" className={activeLink === "/" ? "active" : ""} onClick={() => handleLinkClick("/services")}>
